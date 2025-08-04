@@ -1,0 +1,7 @@
+---1) select count (*) from public.film where length > (select avg (a.length )from public.film a )
+
+---2) select count (*) from public.film where rental_rate=  (select max (a.rental_rate )from public.film a )
+
+---3)select  * from public.film where rental_rate=  (select min (a.rental_rate )from public.film a ) and replacement_cost=(select min (a.replacement_cost )from public.film a )
+
+---4) select customer_id, count (*) from public.payment group by customer_id order by 2 desc limit 1
