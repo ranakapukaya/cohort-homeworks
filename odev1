@@ -1,0 +1,13 @@
+---1) select * from public.film order by title , description
+
+
+---2)select * from public.film where length between 61 and 74 order by length
+
+
+---3)select * from public.film where rental_rate= 0.99 and (replacement_cost= 12.99 or replacement_cost= 28.99)
+
+
+---4)select last_name from public.customer where first_name= 'Mary'
+
+
+---5)select * from public.film where length<51 and rental_rate not in (2.99, 4.99)
