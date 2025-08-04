@@ -1,0 +1,24 @@
+---1)
+create table public.employee (
+
+id INTEGER , 
+name VARCHAR (50),
+birthday DATE,
+email VARCHAR(100)
+
+)
+---2) select * from public.employee
+
+---3)
+update public.employee set name = 'lexi' where id= 39
+update public.employee set email = 'lexi@lexi.com' where id= 1
+update public.employee set birthday = '2000-01-01' where id= 2
+update public.employee set name = 'arda' where id= 7
+update public.employee set birthday = '2010-10-10', email = 'cathi@simplemachines.org' where name= 'Cathi'
+
+---4)
+delete from public.employee where id=11
+delete from public.employee where id=13
+delete from public.employee where name='Dell'
+delete from public.employee where birthday= ' 2013-09-16'
+delete from public.employee where email='mbissex1b@tiny.cc'
