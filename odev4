@@ -1,0 +1,13 @@
+---1)select distinct replacement_cost from public.film order by replacement_cost 
+
+
+---2)select count (distinct replacement_cost ) from public.film 
+
+
+---3)select * from public.film where(title like 'T%') and rating = 'G' 
+
+
+---4)select count(*) from public.country where length(country)=5
+
+
+---5)select * from  public.city where LOWER (city) like '%r' 
