@@ -1,0 +1,10 @@
+---1)select * from public.country where country like 'A%a' 
+
+
+---2)select * from public.country where length(country)>=6 and country like '%n'
+
+
+---3)select * from public.film where (title like '%T%' or title like '%t%' ) and LENGTH(LOWER(title)) - LENGTH(REPLACE(LOWER(title), 't', '')) >= 4;
+
+
+---4)select * from public.film  where (title like 'C%') and  length >90 and  rental_rate IN (2.99)
