@@ -1,0 +1,11 @@
+---1) select first_name from public.customer  union all  select first_name from public.actor
+
+select last_name from public.customer  union all  select last_name from public.actor
+
+---2) select first_name from public.customer  intersect   select first_name from public.actor
+
+select last_name from public.customer  intersect   select last_name from public.actor
+
+---3) select first_name from public.actor  except   select first_name from public.customer
+
+select last_name from public.actor  except   select last_name from public.customer
