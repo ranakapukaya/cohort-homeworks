@@ -1,0 +1,17 @@
+---1
+
+def flatten(l):
+    result = []
+    for i in l:
+        if isinstance(i, list):
+            result.extend(flatten(i))
+        else:
+            result.append(i)
+    return result
+
+---2
+
+def deep_reverse(l):
+    if isinstance(l, list):
+        return [deep_reverse(i) for i in reversed(l)]
+    return l
